@@ -246,6 +246,6 @@ app.get("/:customeListName", function(req,res){
 
 
 
-app.listen(3500 , function(){
-  console.log("Port no 3500 is listening");
+app.listen(process.env.PORT ||3500 , function(){
+  console.log("Port  is listening successfully");
 });
